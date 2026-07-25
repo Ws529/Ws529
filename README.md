@@ -20,23 +20,12 @@
 
 ## 🧑‍💻 About Me
 
-```python
-class WawanSuwandi:
-    def __init__(self):
-        self.name     = "Wawan Suwandi"
-        self.role     = "Informatics Engineering Student"
-        self.campus   = "TI.23.A.5"
-        self.languages = ["Python", "JavaScript", "PHP", "Java", "SQL"]
-        self.focus    = ["Backend Dev", "Web Dev", "Data Science"]
-        
-    def say_hi(self):
-        print("Thanks for dropping by! Let's build something awesome.")
+Hi there! I'm **Wawan Suwandi**, an Informatics Engineering student passionate about building real-world applications.
 
-me = WawanSuwandi()
-me.say_hi()
-```
-
-> A passionate developer who loves turning ideas into real applications. Currently exploring backend systems, data science, and full-stack web development.
+- 🎓 Currently an **Informatics Engineering undergraduate student**
+- 💻 Focused on **Backend Development**, **Web Development**, and **Data Science**
+- 🌱 Always learning new technologies and improving my craft
+- 🤝 Open to collaboration and new opportunities
 
 <img src="assets/divider.svg" alt="divider" width="100%" />
 
@@ -75,45 +64,6 @@ me.say_hi()
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 
-</div>
-
-<img src="assets/divider.svg" alt="divider" width="100%" />
-
-## 📊 GitHub Stats
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Ws529&show_icons=true&theme=github_dark&hide_border=true&count_private=true&bg_color=0D1117&title_color=1e90ff&icon_color=a855f7&text_color=c9d1d9&ring_color=1e90ff" alt="GitHub Stats" height="180" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ws529&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=1e90ff&text_color=c9d1d9" alt="Top Languages" height="180" />
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ws529&theme=github-dark-blue&hide_border=true&background=0D1117&stroke=1e3a5f&ring=1e90ff&fire=fbbf24&currStreakLabel=1e90ff&sideLabels=c9d1d9&currStreakNum=f0f6fc&sideNums=f0f6fc&dates=6b7280" alt="GitHub Streak" />
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Ws529&theme=darkhub&no-frame=true&no-bg=true&row=1&column=7&margin-w=10" alt="GitHub Trophies" />
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ws529&theme=github-compact&bg_color=0D1117&color=1e90ff&line=a855f7&point=5eead4&area_color=1e90ff&area=true&hide_border=true" alt="Contribution Graph" width="95%" />
-</div>
-
-<img src="assets/divider.svg" alt="divider" width="100%" />
-
-## 🐍 Contribution Snake
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ws529/Ws529/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ws529/Ws529/output/github-contribution-grid-snake.svg" />
-    <img alt="Snake animation" src="https://raw.githubusercontent.com/Ws529/Ws529/output/github-contribution-grid-snake.svg" width="100%" />
-  </picture>
 </div>
 
 <img src="assets/divider.svg" alt="divider" width="100%" />
