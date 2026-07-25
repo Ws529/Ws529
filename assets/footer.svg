@@ -1,8 +1,47 @@
-<svg width="1400" height="140" viewBox="0 0 1400 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1400" height="140" fill="#0D1117"/>
-  <path d="M0 92C180 52 340 28 520 42C700 56 860 98 1020 98C1160 98 1270 74 1400 42V140H0V92Z" fill="#111827"/>
-  <path d="M0 112C170 80 330 64 500 74C640 82 800 112 978 112C1154 112 1260 92 1400 74" stroke="#00D8FF" stroke-width="2"/>
-  <circle cx="1180" cy="44" r="6" fill="#5EEAD4"/>
-  <circle cx="1210" cy="44" r="6" fill="#00D8FF"/>
-  <circle cx="1240" cy="44" r="6" fill="#F8FAFC"/>
+<svg width="1400" height="120" viewBox="0 0 1400 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="footBg" x1="0" y1="0" x2="1400" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0a0a1a"/>
+      <stop offset="50%" stop-color="#0d1b2a"/>
+      <stop offset="100%" stop-color="#1b0a2e"/>
+    </linearGradient>
+    <linearGradient id="wave1" x1="0" y1="0" x2="1400" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="wave2" x1="0" y1="0" x2="1400" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#5eead4" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="120" fill="url(#footBg)"/>
+
+  <!-- Wave 1 -->
+  <path d="M0 80 Q175 40 350 60 T700 50 T1050 70 T1400 45 V120 H0Z" fill="url(#wave1)" opacity="0.15">
+    <animate attributeName="d" values="M0 80 Q175 40 350 60 T700 50 T1050 70 T1400 45 V120 H0Z;M0 60 Q175 80 350 50 T700 70 T1050 45 T1400 65 V120 H0Z;M0 80 Q175 40 350 60 T700 50 T1050 70 T1400 45 V120 H0Z" dur="6s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Wave 2 -->
+  <path d="M0 90 Q200 60 400 75 T800 65 T1200 80 T1400 55 V120 H0Z" fill="url(#wave2)" opacity="0.1">
+    <animate attributeName="d" values="M0 90 Q200 60 400 75 T800 65 T1200 80 T1400 55 V120 H0Z;M0 70 Q200 90 400 65 T800 80 T1200 60 T1400 75 V120 H0Z;M0 90 Q200 60 400 75 T800 65 T1200 80 T1400 55 V120 H0Z" dur="8s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Gradient line -->
+  <line x1="100" y1="30" x2="1300" y2="30" stroke="url(#wave1)" stroke-width="1" opacity="0.3"/>
+
+  <!-- Dots -->
+  <circle cx="1220" cy="30" r="4" fill="#00d4ff" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1250" cy="30" r="4" fill="#a855f7" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1280" cy="30" r="4" fill="#ec4899" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Made with love text -->
+  <text x="700" y="108" fill="#4a5568" font-family="'Segoe UI', Arial, sans-serif" font-size="11" text-anchor="middle" letter-spacing="3" opacity="0.5">CRAFTED WITH ♥ BY WAWAN SUWANDI</text>
 </svg>

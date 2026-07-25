@@ -1,4 +1,44 @@
-<svg width="1200" height="80" viewBox="0 0 1200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M0 40C140 0 240 0 360 24C480 48 600 48 720 24C840 0 960 0 1200 40" stroke="#00D8FF" stroke-width="2"/>
-  <path d="M0 56C180 24 320 24 460 44C620 68 760 68 920 44C1030 28 1100 24 1200 42" stroke="#5EEAD4" stroke-width="1.5" stroke-dasharray="6 6"/>
+<svg width="1200" height="40" viewBox="0 0 1200 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="divGrad" x1="0" y1="20" x2="1200" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#00d4ff" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="80%" stop-color="#ec4899" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="scanLine" x1="0" y1="0" x2="200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Main line -->
+  <line x1="0" y1="20" x2="1200" y2="20" stroke="url(#divGrad)" stroke-width="1.5" filter="url(#glow)"/>
+
+  <!-- Center diamond -->
+  <polygon points="600,12 608,20 600,28 592,20" fill="#a855f7" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2s" repeatCount="indefinite"/>
+  </polygon>
+
+  <!-- Side dots -->
+  <circle cx="300" cy="20" r="3" fill="#00d4ff" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.2;0.7" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="900" cy="20" r="3" fill="#ec4899" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.2;0.7" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Scanning light -->
+  <rect x="-100" y="18" width="200" height="4" fill="url(#scanLine)" opacity="0.3">
+    <animate attributeName="x" values="-200;1400" dur="3s" repeatCount="indefinite"/>
+  </rect>
 </svg>

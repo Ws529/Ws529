@@ -1,26 +1,201 @@
 <svg width="1500" height="500" viewBox="0 0 1500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1500" height="500" rx="28" fill="#0D1117"/>
-  <rect x="24" y="24" width="1452" height="452" rx="24" stroke="#20304D" stroke-width="2"/>
-  <rect x="60" y="70" width="500" height="360" rx="24" fill="url(#panel)"/>
-  <path d="M120 330C190 250 260 180 330 220C390 250 430 330 500 310" stroke="#00D8FF" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="1220" cy="180" r="120" fill="url(#glow)" fill-opacity="0.35"/>
-  <circle cx="1180" cy="180" r="72" stroke="#5EEAD4" stroke-opacity="0.4" stroke-width="2"/>
-  <rect x="760" y="120" width="560" height="220" rx="24" fill="#111827" stroke="#2D4A69" stroke-width="2"/>
-  <rect x="790" y="150" width="160" height="18" rx="9" fill="#00D8FF"/>
-  <rect x="790" y="190" width="260" height="12" rx="6" fill="#4B5563"/>
-  <rect x="790" y="220" width="210" height="12" rx="6" fill="#4B5563"/>
-  <rect x="790" y="250" width="320" height="12" rx="6" fill="#4B5563"/>
-  <rect x="790" y="300" width="150" height="20" rx="10" fill="#0EA5E9"/>
-  <rect x="960" y="300" width="150" height="20" rx="10" fill="#5EEAD4"/>
-  <text x="760" y="400" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">Backend Developer • Django • APIs</text>
   <defs>
-    <linearGradient id="panel" x1="60" y1="70" x2="560" y2="430" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#111827"/>
-      <stop offset="1" stop-color="#0F172A"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1500" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0a0a1a"/>
+      <stop offset="50%" stop-color="#0d1b2a"/>
+      <stop offset="100%" stop-color="#1b0a2e"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1220 180) rotate(90) scale(120)">
-      <stop stop-color="#00D8FF"/>
-      <stop offset="1" stop-color="#0D1117" stop-opacity="0"/>
+    <linearGradient id="line1" x1="0" y1="0" x2="400" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="line2" x1="0" y1="0" x2="300" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0"/>
     </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur1" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+    <filter id="blur2" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="60"/>
+    </filter>
+    <filter id="textGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="600" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+      <animate attributeName="x1" values="-200;200;-200" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="400;800;400" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="subtitleGrad" x1="0" y1="0" x2="300" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#5eead4"/>
+      <stop offset="100%" stop-color="#00d4ff"/>
+    </linearGradient>
   </defs>
+
+  <!-- Background -->
+  <rect width="1500" height="500" fill="url(#bg)"/>
+
+  <!-- Animated grid lines -->
+  <g opacity="0.06">
+    <line x1="0" y1="100" x2="1500" y2="100" stroke="#00d4ff" stroke-width="1"/>
+    <line x1="0" y1="200" x2="1500" y2="200" stroke="#00d4ff" stroke-width="1"/>
+    <line x1="0" y1="300" x2="1500" y2="300" stroke="#00d4ff" stroke-width="1"/>
+    <line x1="0" y1="400" x2="1500" y2="400" stroke="#00d4ff" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="500" stroke="#00d4ff" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="500" stroke="#00d4ff" stroke-width="1"/>
+    <line x1="900" y1="0" x2="900" y2="500" stroke="#00d4ff" stroke-width="1"/>
+    <line x1="1200" y1="0" x2="1200" y2="500" stroke="#00d4ff" stroke-width="1"/>
+  </g>
+
+  <!-- Animated glow orbs -->
+  <circle cx="300" cy="150" r="200" fill="url(#glow1)" filter="url(#blur1)">
+    <animate attributeName="cx" values="300;500;300" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="150;300;150" dur="10s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1200" cy="350" r="250" fill="url(#glow2)" filter="url(#blur2)">
+    <animate attributeName="cx" values="1200;1000;1200" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="350;200;350" dur="8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Floating particles -->
+  <circle cx="200" cy="100" r="2" fill="#00d4ff" opacity="0.6">
+    <animate attributeName="cy" values="100;80;100" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="500" cy="400" r="1.5" fill="#a855f7" opacity="0.5">
+    <animate attributeName="cy" values="400;370;400" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="800" cy="80" r="2.5" fill="#5eead4" opacity="0.4">
+    <animate attributeName="cy" values="80;50;80" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.9;0.4" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1100" cy="300" r="2" fill="#ec4899" opacity="0.5">
+    <animate attributeName="cy" values="300;270;300" dur="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1350" cy="120" r="1.8" fill="#00d4ff" opacity="0.4">
+    <animate attributeName="cy" values="120;90;120" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="700" cy="450" r="2" fill="#a855f7" opacity="0.3">
+    <animate attributeName="cy" values="450;420;450" dur="3.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="400" cy="250" r="1.5" fill="#5eead4" opacity="0.5">
+    <animate attributeName="cy" values="250;220;250" dur="4.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1000" cy="180" r="2.2" fill="#00d4ff" opacity="0.4">
+    <animate attributeName="cy" values="180;150;180" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Scanning line effect -->
+  <rect x="0" y="0" width="1500" height="3" fill="url(#line1)" opacity="0.3">
+    <animate attributeName="y" values="-3;500" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Code bracket decorations -->
+  <text x="80" y="180" fill="#00d4ff" font-family="'Fira Code', 'Courier New', monospace" font-size="72" opacity="0.08" font-weight="700">{</text>
+  <text x="1380" y="400" fill="#a855f7" font-family="'Fira Code', 'Courier New', monospace" font-size="72" opacity="0.08" font-weight="700">}</text>
+  <text x="120" y="420" fill="#5eead4" font-family="'Fira Code', 'Courier New', monospace" font-size="48" opacity="0.06" font-weight="700">&lt;/&gt;</text>
+  <text x="1250" y="150" fill="#ec4899" font-family="'Fira Code', 'Courier New', monospace" font-size="48" opacity="0.06" font-weight="700">//</text>
+
+  <!-- Terminal window decoration -->
+  <rect x="100" y="80" width="500" height="30" rx="8" ry="8" fill="#1a1a2e" opacity="0.6"/>
+  <circle cx="120" cy="95" r="5" fill="#ff5f57" opacity="0.8"/>
+  <circle cx="138" cy="95" r="5" fill="#ffbd2e" opacity="0.8"/>
+  <circle cx="156" cy="95" r="5" fill="#28ca42" opacity="0.8"/>
+  <rect x="100" y="110" width="500" height="180" rx="0" ry="0" fill="#0d1117" opacity="0.5" stroke="#1e3a5f" stroke-width="1"/>
+  
+  <!-- Animated code lines -->
+  <g font-family="'Fira Code', 'Courier New', monospace" font-size="14">
+    <text x="120" y="140" fill="#7c3aed" opacity="0.9">class</text>
+    <text x="170" y="140" fill="#00d4ff" opacity="0.9">BackendDeveloper</text>
+    <text x="340" y="140" fill="#f8fafc" opacity="0.6">:</text>
+    
+    <text x="140" y="165" fill="#7c3aed" opacity="0.9">def</text>
+    <text x="180" y="165" fill="#5eead4" opacity="0.9">__init__</text>
+    <text x="265" y="165" fill="#f8fafc" opacity="0.6">(self):</text>
+    
+    <text x="160" y="190" fill="#f8fafc" opacity="0.6">self.</text>
+    <text x="205" y="190" fill="#00d4ff" opacity="0.9">name</text>
+    <text x="250" y="190" fill="#f8fafc" opacity="0.6">=</text>
+    <text x="265" y="190" fill="#fbbf24" opacity="0.9">"Wawan Suwandi"</text>
+    
+    <text x="160" y="215" fill="#f8fafc" opacity="0.6">self.</text>
+    <text x="205" y="215" fill="#00d4ff" opacity="0.9">stack</text>
+    <text x="255" y="215" fill="#f8fafc" opacity="0.6">=</text>
+    <text x="270" y="215" fill="#fbbf24" opacity="0.9">["Django", "FastAPI"]</text>
+
+    <text x="160" y="240" fill="#f8fafc" opacity="0.6">self.</text>
+    <text x="205" y="240" fill="#00d4ff" opacity="0.9">passion</text>
+    <text x="275" y="240" fill="#f8fafc" opacity="0.6">=</text>
+    <text x="290" y="240" fill="#fbbf24" opacity="0.9">"Backend Dev"</text>
+
+    <!-- Blinking cursor -->
+    <rect x="405" y="228" width="10" height="16" fill="#00d4ff">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Main title -->
+  <text x="750" y="200" fill="url(#titleGrad)" font-family="'Segoe UI', Arial, sans-serif" font-size="64" font-weight="800" text-anchor="middle" filter="url(#textGlow)">WAWAN SUWANDI</text>
+  
+  <!-- Subtitle -->
+  <text x="750" y="260" fill="url(#subtitleGrad)" font-family="'Segoe UI', Arial, sans-serif" font-size="24" font-weight="600" text-anchor="middle" letter-spacing="8">BACKEND DEVELOPER</text>
+
+  <!-- Decorative line under title -->
+  <rect x="600" y="280" width="300" height="2" rx="1" fill="url(#titleGrad)" opacity="0.6">
+    <animate attributeName="width" values="200;300;200" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="x" values="650;600;650" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Tech tags -->
+  <g font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600">
+    <rect x="575" y="310" width="80" height="28" rx="14" fill="#0d1117" stroke="#00d4ff" stroke-width="1.5" opacity="0.8"/>
+    <text x="615" y="329" fill="#00d4ff" text-anchor="middle">Django</text>
+
+    <rect x="670" y="310" width="80" height="28" rx="14" fill="#0d1117" stroke="#a855f7" stroke-width="1.5" opacity="0.8"/>
+    <text x="710" y="329" fill="#a855f7" text-anchor="middle">FastAPI</text>
+
+    <rect x="765" y="310" width="80" height="28" rx="14" fill="#0d1117" stroke="#5eead4" stroke-width="1.5" opacity="0.8"/>
+    <text x="805" y="329" fill="#5eead4" text-anchor="middle">Python</text>
+
+    <rect x="860" y="310" width="80" height="28" rx="14" fill="#0d1117" stroke="#ec4899" stroke-width="1.5" opacity="0.8"/>
+    <text x="900" y="329" fill="#ec4899" text-anchor="middle">REST API</text>
+  </g>
+
+  <!-- Status indicator -->
+  <g transform="translate(690, 370)">
+    <circle cx="0" cy="0" r="5" fill="#22c55e">
+      <animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="10" fill="none" stroke="#22c55e" stroke-width="1" opacity="0.3">
+      <animate attributeName="r" values="8;14;8" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0;0.3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="20" y="5" fill="#94a3b8" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="500">Available for collaboration</text>
+  </g>
+
+  <!-- Corner accents -->
+  <path d="M0 0L60 0L60 4L4 4L4 60L0 60Z" fill="#00d4ff" opacity="0.3"/>
+  <path d="M1500 0L1440 0L1440 4L1496 4L1496 60L1500 60Z" fill="#a855f7" opacity="0.3"/>
+  <path d="M0 500L60 500L60 496L4 496L4 440L0 440Z" fill="#5eead4" opacity="0.3"/>
+  <path d="M1500 500L1440 500L1440 496L1496 496L1496 440L1500 440Z" fill="#ec4899" opacity="0.3"/>
 </svg>
